@@ -84,7 +84,8 @@ void wrap(char *string, int max) {
             l = 0;
         } else {
             i++;
-            l++;
+
+            l = (string[i] == '\n') ? 0 : (l + 1);
         }
     }
 }
